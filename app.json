@@ -7,7 +7,7 @@
     "env": {
         "SCRAPYD_SERVER_1": {
             "description": "You can add more Scrapyd servers in the web UI of Heroku after the app is bulit, and the key of the environment variable should be like SCRAPYD_SERVER_n (n for a unique integer).",
-            "value": "('valkyrie', 'V@lkyrie!', '10.10.115.107', '6800', 'group')",
+            "value": "username:password@svr-1.herokuapp.com:80",
             "required": true
         },
         "SCRAPYD_SERVER_2": {

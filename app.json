@@ -12,7 +12,7 @@
         },
         "SCRAPYD_SERVER_2": {
             "description": "See SCRAPYD_SERVER_1, type del to ignore the environment variable",
-            "value": "svr-2.herokuapp.com:80#label",
+            "value": "valkyrie:V%40lkyrie!@10.10.115.107:6800",
             "required": false
         },
         "SCRAPYD_SERVER_3": {

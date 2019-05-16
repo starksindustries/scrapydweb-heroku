@@ -34,7 +34,7 @@ SCRAPYDWEB_BIND = '0.0.0.0'
 SCRAPYDWEB_PORT = int(os.environ['PORT'])
 
 # The default is False, set it to True to enable basic auth for web UI.
-ENABLE_AUTH = False
+ENABLE_AUTH = True
 
 # In order to enable basic auth, both USERNAME and PASSWORD should be non-empty strings.
 USERNAME = 'signals_admin'
@@ -57,7 +57,7 @@ PRIVATEKEY_FILEPATH = ''
 # ScrapydWeb is able to locate projects in the SCRAPY_PROJECTS_DIR,
 # so that you can simply select a project to deploy, instead of packaging it in advance.
 # e.g. 'C:/Users/username/myprojects/' or '/home/username/myprojects/'
-SCRAPY_PROJECTS_DIR = ''
+SCRAPY_PROJECTS_DIR = '/anaconda3/envs/Heroku_Environment/'
 
 
 ############################## Scrapyd ########################################
@@ -81,7 +81,7 @@ SCRAPY_PROJECTS_DIR = ''
 #   - it's recommended to pass in a tuple of 5 elements.
 #   - e.g. ('', '', '127.0.0.1', '6800', '') or ('username', 'password', 'localhost', '6801', 'group')
 SCRAPYD_SERVERS = [
-    '127.0.0.1:6800',
+    'localhost:6800',
     # 'username:password@localhost:6801#group',
     ('valkyrie', 'V@lkyrie!', '10.10.115.107', '6800', 'group'),
  ]
@@ -102,7 +102,7 @@ LOCAL_SCRAPYD_SERVER = 'localhost:6800'
 # Check out this link to find out where the Scrapy logs are stored:
 # https://scrapyd.readthedocs.io/en/stable/config.html#logs-dir
 # e.g. 'C:/Users/username/logs/' or '/home/username/logs/'
-SCRAPYD_LOGS_DIR = r'C:\Users\alexd\Anaconda3\envs\Heroku_Environment\ScrapydWeb'
+SCRAPYD_LOGS_DIR = 'C:\Users\alexd\Anaconda3\envs\Heroku_Environment\ScrapydWeb'
 
 # ScrapydWeb would try every extension in sequence to locate the Scrapy logfile.
 # The default is ['.log', '.log.gz', '.txt'].
@@ -117,7 +117,7 @@ SCRAPYD_LOG_EXTENSIONS = ['.log', '.log.gz', '.txt']
 # Run 'logparser -h' to find out the config file of LogParser for more advanced settings.
 # Visit https://github.com/my8100/logparser for more info.
 ENABLE_LOGPARSER = True
-ENABLE_LOGPARSER = False
+#ENABLE_LOGPARSER = False
 
 # Whether to backup the stats json files locally after you visit the Stats page of a job
 # so that it is still accessible even if the original logfile has been deleted.

@@ -7,7 +7,7 @@
     "env": {
         "SCRAPYD_SERVER_1": {
             "description": "You can add more Scrapyd servers in the web UI of Heroku after the app is bulit, and the key of the environment variable should be like SCRAPYD_SERVER_n (n for a unique integer).",
-            "value": "username:password@svr-1.herokuapp.com:80",
+            "value": "username:password@signals-scrapy.herokuapp.com:80",
             "required": true
         },
         "SCRAPYD_SERVER_2": {
@@ -27,22 +27,22 @@
         },
         "ENABLE_AUTH": {
             "description": "The default is False, set it to True to enable basic auth for web UI.",
-            "value": "False",
+            "value": "True",
             "required": true
         },
         "USERNAME": {
             "description": "In order to enable basic auth, both USERNAME and PASSWORD should be non-empty strings.",
-            "value": "admin",
+            "value": "signals_admin",
             "required": true
         },
         "PASSWORD": {
             "description": "In order to enable basic auth, both USERNAME and PASSWORD should be non-empty strings.",
-            "value": "scrapydweb",
+            "value": "Sygnulz!",
             "required": true
         },
         "TZ": {
             "description": "Timezone of the app, get it via: python -c \"import tzlocal; print(tzlocal.get_localzone())\"",
-            "value": "UTC",
+            "value": "America/Chicago",
             "required": false
         },
         "VERBOSE": {

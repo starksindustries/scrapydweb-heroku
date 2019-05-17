@@ -12,12 +12,12 @@
         },
         "SCRAPYD_SERVER_2": {
             "description": "See SCRAPYD_SERVER_1, type del to ignore the environment variable",
-            "value": "valkyrie#label",
+            "value": "valkyrie:V@lkyrie!@10.10.115.107:6800#label",
             "required": false
         },
         "SCRAPYD_SERVER_3": {
             "description": "See SCRAPYD_SERVER_1, type del to ignore the environment variable",
-            "value": "valkyrie:V@lkyrie!@10.10.115.107:6800#group",
+            "value": "svr-3.herokuapp.com:80#group",
             "required": false
         },
         "SCRAPYD_SERVER_4": {
@@ -32,17 +32,17 @@
         },
         "USERNAME": {
             "description": "In order to enable basic auth, both USERNAME and PASSWORD should be non-empty strings.",
-            "value": "admin",
+            "value": "signals_admin",
             "required": true
         },
         "PASSWORD": {
             "description": "In order to enable basic auth, both USERNAME and PASSWORD should be non-empty strings.",
-            "value": "scrapydweb",
+            "value": "Sygnulz!",
             "required": true
         },
         "TZ": {
             "description": "Timezone of the app, get it via: python -c \"import tzlocal; print(tzlocal.get_localzone())\"",
-            "value": "UTC",
+            "value": "America/Chicago",
             "required": false
         },
         "VERBOSE": {

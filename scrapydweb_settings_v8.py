@@ -102,7 +102,7 @@ LOCAL_SCRAPYD_SERVER = 'localhost:6800'
 # Check out this link to find out where the Scrapy logs are stored:
 # https://scrapyd.readthedocs.io/en/stable/config.html#logs-dir
 # e.g. 'C:/Users/username/logs/' or '/home/username/logs/'
-SCRAPYD_LOGS_DIR = 'C:\Users\alexd\Anaconda3\envs\Heroku_Environment\ScrapydWeb'
+SCRAPYD_LOGS_DIR = r'C:\Users\alexd\Anaconda3\envs\Heroku_Environment\ScrapydWeb'
 
 # ScrapydWeb would try every extension in sequence to locate the Scrapy logfile.
 # The default is ['.log', '.log.gz', '.txt'].

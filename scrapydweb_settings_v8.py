@@ -57,7 +57,7 @@ PRIVATEKEY_FILEPATH = ''
 # ScrapydWeb is able to locate projects in the SCRAPY_PROJECTS_DIR,
 # so that you can simply select a project to deploy, instead of packaging it in advance.
 # e.g. 'C:/Users/username/myprojects/' or '/home/username/myprojects/'
-SCRAPY_PROJECTS_DIR = '/Users/alexd/anaconda3/envs/Heroku_Environment/'
+SCRAPY_PROJECTS_DIR = ''
 
 
 ############################## Scrapyd ########################################
@@ -98,11 +98,11 @@ SCRAPYD_SERVERS = [
 # ScrapydWeb would try to directly read Scrapy logfiles from disk, instead of making a request
 # to the Scrapyd server.
 # e.g. '127.0.0.1:6800' or 'localhost:6801', do not forget the port number.
-LOCAL_SCRAPYD_SERVER = 'localhost:6800'
+LOCAL_SCRAPYD_SERVER = ''
 # Check out this link to find out where the Scrapy logs are stored:
 # https://scrapyd.readthedocs.io/en/stable/config.html#logs-dir
 # e.g. 'C:/Users/username/logs/' or '/home/username/logs/'
-SCRAPYD_LOGS_DIR = '/Users/alexd/Anaconda3/envs/Heroku_Environment/ScrapydWeb'
+SCRAPYD_LOGS_DIR = ''
 
 # ScrapydWeb would try every extension in sequence to locate the Scrapy logfile.
 # The default is ['.log', '.log.gz', '.txt'].

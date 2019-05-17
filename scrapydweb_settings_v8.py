@@ -80,11 +80,19 @@ SCRAPY_PROJECTS_DIR = ''
 #   - or if ScrapydWeb fails to parse the string format passed in,
 #   - it's recommended to pass in a tuple of 5 elements.
 #   - e.g. ('', '', '127.0.0.1', '6800', '') or ('username', 'password', 'localhost', '6801', 'group')
-SCRAPYD_SERVERS = [
-    'localhost:6800',
-    # 'username:password@localhost:6801#group',
-    ('valkyrie', 'V@lkyrie!', '10.10.115.107', '6800', 'group'),
- ]
+# SCRAPYD_SERVERS = [
+#     'localhost:6800',
+#     # 'username:password@localhost:6801#group',
+#     ('valkyrie', 'V@lkyrie!', '10.10.115.107', '6800', 'group'),
+#  ]
+
+
+SCRAPYD_SERVERS = []
+for k, v in os.environ.items():
+    k = k.strip()
+    v = v.strip()
+    if re.match(r'SCRAPYD_SERVER_\d+', k) and not re.search(r'^del(ete)?$', v, flags=re.I):
+        SCRAPYD_SERVERS.append(v)
 # Comment the following block if you don't want to set up the SCRAPYD_SERVERS option
 # via environment variables.
 # SCRAPYD_SERVERS = []

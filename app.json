@@ -12,7 +12,7 @@
         },
         "SCRAPYD_SERVER_2": {
             "description": "See SCRAPYD_SERVER_1, type del to ignore the environment variable",
-            "value": "valkyrie:V@lkyrie!@10.10.115.107:6800#label",
+            "value": "valkyrie:Sygnulz!@10.10.115.107:6800#label",
             "required": false
         },
         "SCRAPYD_SERVER_3": {

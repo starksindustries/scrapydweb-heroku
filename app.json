@@ -17,7 +17,7 @@
         },
         "SCRAPYD_SERVER_3": {
             "description": "See SCRAPYD_SERVER_1, type del to ignore the environment variable",
-            "value": "valkyrie:V\@lkyrie!@10.10.115.107:6800#group",
+            "value": "valkyrie:V@lkyrie!@10.10.115.107:6800#group",
             "required": false
         },
         "SCRAPYD_SERVER_4": {

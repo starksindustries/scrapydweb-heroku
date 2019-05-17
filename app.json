@@ -27,7 +27,7 @@
         },
         "ENABLE_AUTH": {
             "description": "The default is False, set it to True to enable basic auth for web UI.",
-            "value": "False",
+            "value": "True",
             "required": true
         },
         "USERNAME": {
